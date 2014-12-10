@@ -1,0 +1,12 @@
+--------------->Days with Timespan
+                Console.Write("Enter Your Birthday ! ");
+            DateTime birth = Convert.ToDateTime(Console.ReadLine());
+
+            DateTime today = DateTime.Now;
+
+            TimeSpan time = today - birth;
+
+            int day = time.Days;
+
+            Console.Write(day + "you are living");
+            Console.ReadKey();
